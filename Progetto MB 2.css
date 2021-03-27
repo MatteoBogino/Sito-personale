@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-menu{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.header-menu a:visited{
+    color: rgb(27, 27, 114);
+}
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    border-bottom: 1px solid rgb(27, 27, 114);
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 3px;
+    font-size: 20px;
+}
+.info{
+    background-image: url('Immagini/sfondo-blu.jpg');
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 105px;
+}
+.info-personali{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.info-personali li{
+    margin-top: 40px;
+    text-align: left;
+}
+.nome{
+    text-align: center;
+    margin: 0px 30px;
+}
+.social{
+    clear: both;
+    color: rgb(27, 27, 114);
+    background-color: #5995da;
+    text-align: center;
+}
+.social a:link{
+    color: white;
+}
+.social a:visited{
+    color: orange;
+}
+.social a:hover,
+.social a:active{
+    color: green;
+}
+.social-colleg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-colleg a{
+    margin-right: 50px;
+    margin-top: 2px;
+}
+.presentazione{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    text-align: center;
+    padding-bottom: 65px;
+    font-size: 18px;
+}
+.presentazione h3{
+    padding-top: 50px;
+    margin-bottom: 35px;
+    font-size: 28px;
+}
+.presentazione div{
+    line-height: 28px;
+}
+.title-esperienze{
+    color: white;
+    background-color: #5995da;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+}
+.esperienze{
+    color: white;
+    background-image: url('Immagini/ingranaggi.jpg');
+    padding: 25px;
+    padding-bottom: 98px;
+}
+.contenitore-totale{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.contenitore-work{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 2px 20px;
+    text-align: center;
+}
+.dettagli{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 12px;
+    position: relative;
+    cursor: pointer;
+}
+.descr{
+    color: rgb(27, 27, 114);
+    background-color: white;
+    border: 2px solid #5995da;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    padding: 4px;
+    position: absolute;
+    display: none;
+}
+.dettagli:hover .descr{
+    display: flex;
+}
+.title-hobby{
+    color: white;
+    background-color: #5995da;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+}
+.hobby{
+    color: rgb(27, 27, 114);
+    font-size: 18px;
+}
+#contenitore-hobby{
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px rgb(27, 27, 114)
+}
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 16px;
+}
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.elenco{
+    display: flex;
+    flex-direction: column;
+    margin: 45px;
+    min-width: 400px;
+}
+.hobby img{
+    border-radius: 100%;
+    margin: 0 auto;
+    width: 35%;
+}
+.scritta{
+    text-align: center;
+    margin: 12px auto;
+}
+.title-progetto{
+    color: white;
+    background-color: #5995da;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+}
+.sfondo-progetto{
+    background-image: url('Immagini/pro.png');
+    font-size: 18px;
+    padding: 10px;
+}
+.progetto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(27, 27, 114);
+}
+.progetto img{
+    width: 50%;
+    margin-left: 20%;
+}
+.descr-app{
+    background-color: white;
+    font-size: 18px;
+    margin-left: 8px;
+    padding: 30px;
+    border: 2px solid #5995da;
+    border-radius: 30px;
+}
+.testa-scrivimi{
+    display: flex;
+    justify-content: center;
+}
+.scrivimi{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 23px;
+    border: 2px solid #5995da;
+    border-radius: 8px;
+    width: 50%;
+    margin: 40px 200px;
+    padding: 30px;
+}
+.contenitore{
+    display: flex;
+    justify-content: center;
+}
+.contenitore-dati{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #5995da;
+    border-radius: 8px;
+    width: 50%;
+    margin: 25px 200px;
+    padding: 50px;
+    padding-bottom: 20px;
+}
+.visitatore{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.visitatore input[type="text"],
+.visitatore input[type="email"],
+.visitatore textarea{
+    width: 250px;
+    height: initial;
+}
+.visitatore label{
+    text-align: initial;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+}
+.visitatore textarea{
+    min-height: 200px;
+    resize: none;
+}
+.visitatore input[type="text"]:invalid,
+.visitatore input[type="email"]:invalid{
+    border: 1px solid #d55c5f;
+    color: #d55c5f;
+}
+.visitatore button{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #5995da;
+    border-radius: 20px;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-left: 185px;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 15px;
+}
+@media screen and (min-width: 500px) and (max-width: 900px){
+    .info{
+        display: flex;
+    }
+    .info-personali{
+        width: 100%;
+    }
+    .nome{
+        font-size: 18px;
+    }
+    #contenitore-esperienze{
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .contenitore-work{
+        display: flex;
+        flex-direction: column;
+        margin: 45px;
+        min-width: 400px;
+        padding-bottom: 60px;
+    }
+    .esperienze{
+        padding-bottom:0px;
+    }
+    .dettagli{
+        position: relative;
+        cursor: pointer;
+    }
+    .descr{
+        position: absolute;
+        top: 23px;
+        right: 45px;
+        min-width: 190px;
+        margin-left: 45px;
+    }
+    .dettagli:hover .descr{
+        display: flex;
+    }
+    .progetto{
+        display: block;
+    }
+    .progetto img{
+        width: 30%;
+        margin-left: 35%;
+    }
+    .contenitore-dati{
+        padding: 20px;
+    }
+    .visitatore,
+    .visitatore label,
+    .visitatore input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 5%;
+    }
+    .visitatore input[type="text"],
+    .visitatore input[type="email"],
+    .visitatore textarea{
+        width: 80%;
+    }
+.visitatore button{
+    padding: 7% 11%;
+    cursor: pointer;
+    margin-left: 0%;
+    }
+}
+@media screen and (max-width: 499px){
+    .info-personali{
+        display: block;
+    }
+    .social-colleg{
+        display: block;
+        margin-left: 12%;
+        padding-top: 2%;
+    }
+    #contenitore-esperienze{
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .contenitore-work{
+        display: flex;
+        flex-direction: column;
+        margin: 45px;
+        min-width: 250px;
+        padding-bottom: 95px;
+    }
+    .esperienze{
+        padding-bottom:0px;
+    }
+    .dettagli{
+        position: relative;
+        cursor: pointer;
+    }
+    .descr{
+        position: absolute;
+        top: 23px;
+        right: 33px;
+        min-width: 190px;
+        margin-left: 45px;
+    }
+    .dettagli:hover .descr{
+        display: flex;
+    }
+    .elenco{
+        min-width: 305px;
+    }
+    .progetto{
+        display: block;
+    }
+    .progetto img{
+        width: 30%;
+        margin-left: 35%;
+    }
+    .contenitore-dati{
+        padding: 25px;
+    }
+    .visitatore,
+    .visitatore label,
+    .visitatore input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 5%;
+    }
+    .visitatore input[type="text"],
+    .visitatore input[type="email"],
+    .visitatore textarea{
+        width: 90%;
+    }
+.visitatore button{
+    padding: 7% 11%;
+    cursor: pointer;
+    margin-left: 0%;
+    }
+}
+
+
+
+
+
